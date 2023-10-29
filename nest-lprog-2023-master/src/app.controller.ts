@@ -2,6 +2,7 @@ import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { UserDTO } from './model/user';
 import { UserService } from './service/user.service';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('api')
 export class AppController {
@@ -32,4 +33,12 @@ export class AppController {
     const user = await this.userService.getUserById(id);
     return user;
   }
+
+  //@ApiTags('Config_swagger')
+  //export class ExemploController {
+    //@Get()
+    //getExemplo(): string {
+      //return '****';
+    //}
+  //}
 }
