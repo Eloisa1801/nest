@@ -34,11 +34,4 @@ export class AppController {
     return user;
   }
 
-  //@ApiTags('Config_swagger')
-  //export class ExemploController {
-    //@Get()
-    //getExemplo(): string {
-      //return '****';
-    //}
-  //}
 }
